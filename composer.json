@@ -1,0 +1,20 @@
+{
+    "name": "dafap/simply-exclude-dafap-edition",
+    "description": "A modernised WordPress plugin for content exclusion based on Simply Exclude.",
+    "type": "wordpress-plugin",
+    "license": "GPL-2.0-or-later",
+    "authors": [
+        {
+            "name": "Alain Pomirol",
+            "email": "alain.pomirol@dafap.fr"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Dafap\\SimplyExclude\\": "include/"
+        }
+    },
+    "require": {
+        "php": ">=8.4"
+    }
+}

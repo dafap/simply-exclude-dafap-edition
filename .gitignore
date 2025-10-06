@@ -1,0 +1,9 @@
+# Dossiers à ignorer
+doc/
+vendor/
+.vscode/
+
+# Fichiers à ignorer
+*.log
+
+
