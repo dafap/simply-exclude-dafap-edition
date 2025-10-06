@@ -1,5 +1,13 @@
 <?php
-
+/**
+ * Quick Edit support for Simply Exclude.
+ *
+ * Injects the inline edit UI (checkboxes) and per-row hidden data used by
+ * the Quick Edit script to prefill values.
+ *
+ * @package Dafap\SimplyExclude\Admin\MetaBox
+ * @since 1.0.0
+ */
 declare(strict_types=1);
 
 namespace Dafap\SimplyExclude\Admin\MetaBox;

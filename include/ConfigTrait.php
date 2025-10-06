@@ -1,5 +1,15 @@
 <?php
-
+/**
+ * Configuration helpers and shared constants for the Simply Exclude plugin.
+ *
+ * Fournit des utilitaires partagés (textdomain, contextes, libellés) utilisés
+ * par les classes admin et frontend du plugin.
+ *
+ * @package Dafap\SimplyExclude
+ * @author Alain
+ * @license GPL-2.0-or-later
+ * @since 1.0.0
+ */
 declare(strict_types=1);
 
 namespace Dafap\SimplyExclude;
@@ -8,6 +18,9 @@ trait ConfigTrait
 {
     public const LANGUAGE_DOMAIN = 'simply-exclude';
 
+    /**
+     * Retourne le tableau des contextes traduit dans la langue utilisée
+     */
     public static function getContexts(): array
     {
         return [

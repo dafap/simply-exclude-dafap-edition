@@ -1,14 +1,14 @@
 <?php
-
 /**
- * Plugin Name: Simply Exclude – Dafap Edition
- * Plugin URI: https://example.com/simply-exclude-dafap-edition
- * Description: Version personnalisée du plugin Simply Exclude pour les besoins Dafap.
- * Version: 1.0.0
- * Author: Alain
- * License: GPL2
+ * Main bootstrap class for the Simply Exclude - Dafap Edition plugin.
+ *
+ * Cette classe orchestre l'initialisation du backend et du frontend du plugin.
+ *
+ * @package Dafap\SimplyExclude
+ * @author Alain
+ * @license GPL-2.0-or-later
+ * @since 1.0.0
  */
-
 declare(strict_types=1);
 
 namespace Dafap\SimplyExclude;

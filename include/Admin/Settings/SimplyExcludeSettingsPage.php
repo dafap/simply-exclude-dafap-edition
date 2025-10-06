@@ -1,5 +1,13 @@
 <?php
-
+/**
+ * Settings page for Simply Exclude plugin.
+ *
+ * Registers and renders the options page used to control default behaviors
+ * for each exclusion context.
+ *
+ * @package Dafap\SimplyExclude\Admin\Settings
+ * @since 1.0.0
+ */
 declare(strict_types=1);
 
 namespace Dafap\SimplyExclude\Admin\Settings;

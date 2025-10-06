@@ -1,11 +1,13 @@
 <?php
 /**
- * Simply Exclude - Frontend Class
- * @package SimplyExclude\DAFAP\Edition
+ * Frontend integration for Simply Exclude : query and terms filters.
+ *
+ * Gère l'application des exclusions côté public (WP_Query, get_terms, etc.).
+ *
+ * @package Dafap\SimplyExclude
  * @author Alain
- * @license GPL2
- * @link https://example.com/
- * @since 3.0.0
+ * @license GPL-2.0-or-later
+ * @since 1.0.0
  */
 declare(strict_types=1);
 namespace Dafap\SimplyExclude;

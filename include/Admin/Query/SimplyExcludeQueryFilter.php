@@ -1,5 +1,13 @@
 <?php
-
+/**
+ * Query filtering logic for Simply Exclude.
+ *
+ * Applies post exclusions to front-end WP_Query instances according to
+ * per-post meta and configured behaviors.
+ *
+ * @package Dafap\SimplyExclude\Admin\Query
+ * @since 1.0.0
+ */
 declare(strict_types=1);
 
 namespace Dafap\SimplyExclude\Admin\Query;

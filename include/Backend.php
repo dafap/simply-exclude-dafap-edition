@@ -1,14 +1,15 @@
 <?php
-
 /**
- * Simply Exclude - Admin Backend Class
- * @package SimplyExclude\DAFAP\Edition
+ * Admin backend for Simply Exclude: registers meta boxes, settings and admin UI.
+ *
+ * Responsible for registering columns, enqueuing admin assets and rendering
+ * the admin-side UI used to manage per-post exclusions.
+ *
+ * @package Dafap\SimplyExclude
  * @author Alain
- * @license GPL2
- * @link https://example.com/
- * @since 3.0.0
+ * @license GPL-2.0-or-later
+ * @since 1.0.0
  */
-
 declare(strict_types=1);
 
 namespace Dafap\SimplyExclude;

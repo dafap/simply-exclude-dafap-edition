@@ -1,11 +1,11 @@
 <?php
 /**
  * Plugin Name: Simply Exclude - Dafap Edition
- * Plugin URI: https://example.com/
+ * Plugin URI: https://github.com/dafap/simply-exclude-dafap-edition
  * Description: Version modernisée et compatible PHP 8.4 du plugin Simply Exclude.
- * Version: 3.0.0
+ * Version: 1.0.0
  * Author: Dafap
- * Author URI: https://example.com/
+ * Author URI: https://www.dafap.fr
  * Text Domain: simplyexclude-dafap-edition
  * License: GPL-2.0-or-later
  * License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -18,7 +18,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 // Définition des constantes de base
 if ( ! defined( 'SE_EDITION_VERSION' ) ) {
-    define( 'SE_EDITION_VERSION', '3.0.0' );
+    define( 'SE_EDITION_VERSION', '1.0.0' );
 }
 if ( ! defined( 'SE_EDITION_PATH' ) ) {
     define( 'SE_EDITION_PATH', plugin_dir_path( __FILE__ ) );

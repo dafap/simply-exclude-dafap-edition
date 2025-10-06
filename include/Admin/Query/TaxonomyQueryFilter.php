@@ -1,5 +1,12 @@
 <?php
-
+/**
+ * Taxonomy query helpers for Simply Exclude.
+ *
+ * Provides utilities to exclude terms from public queries based on term meta.
+ *
+ * @package Dafap\SimplyExclude\Admin\Query
+ * @since 1.0.0
+ */
 declare(strict_types=1);
 
 namespace Dafap\SimplyExclude\Admin\Query;
