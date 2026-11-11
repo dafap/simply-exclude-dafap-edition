@@ -3,7 +3,7 @@
  * Plugin Name: Simply Exclude Dafap Edition
  * Plugin URI: https://github.com/dafap/simply-exclude-dafap-edition
  * Description: Version modernisée et compatible PHP 8.4 du plugin Simply Exclude.
- * Version: 1.0.1
+ * Version: 1.1.0
  * Author: Dafap
  * Author URI: https://www.dafap.fr
  * Text Domain: simplyexclude-dafap-edition
@@ -18,7 +18,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 // Définition des constantes de base
 if ( ! defined( 'SE_EDITION_VERSION' ) ) {
-    define( 'SE_EDITION_VERSION', '1.0.1' );
+    define( 'SE_EDITION_VERSION', '1.1.0' );
 }
 if ( ! defined( 'SE_EDITION_PATH' ) ) {
     define( 'SE_EDITION_PATH', plugin_dir_path( __FILE__ ) );
