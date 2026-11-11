@@ -4,6 +4,7 @@
  * Plugin URI: https://github.com/dafap/simply-exclude-dafap-edition
  * Description: Version modernisée et compatible PHP 8.4 du plugin Simply Exclude.
  * Version: 1.1.0
+ * Tested up to: 7.1
  * Author: Dafap
  * Author URI: https://www.dafap.fr
  * Text Domain: simplyexclude-dafap-edition
@@ -29,15 +30,15 @@ if ( ! defined( 'SE_EDITION_PATH' ) ) {
 require_once SE_EDITION_PATH . 'vendor/autoload.php';
 
 // 1. bis : Initialisation de Plugin Update Checker (v6 via la bibliothèque globale mu-plugin)
-if ( function_exists( 'puc_load_update_checker' ) ) {
-    $updateChecker = puc_load_update_checker(
+if ( class_exists( 'YahnisElsts\PluginUpdateChecker\v6\PucFactory' ) ) {
+    $updateChecker = YahnisElsts\PluginUpdateChecker\v6\PucFactory::buildUpdateChecker(
         'https://github.com/dafap/simply-exclude-dafap-edition',
         __FILE__,
         'simply-exclude-dafap-edition'
     );
-    
-    // Définition explicite de la branche pour les mises à jour - supprimé pour ne tenir compte que des releases et tags GitHub
-    // $updateChecker->setBranch( 'main' );
+    $updateChecker->setBranch( 'master' );
+} else {
+	error_log('ERREUR : puc_load_update_checker introuvable après rectification v6 !');
 }
 
 // 2. Initialisation du plugin
