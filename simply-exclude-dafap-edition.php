@@ -17,9 +17,16 @@ if ( ! defined( 'ABSPATH' ) ) {
     exit;
 }
 
+// Récupération dynamique de la version depuis l'en-tête du plugin
+if ( ! function_exists( 'get_file_data' ) ) {
+    require_once ABSPATH . 'wp-includes/functions.php';
+}
+$plugin_data   = get_file_data( __FILE__, [ 'version' => 'Version' ] );
+$plugin_version = ! empty( $plugin_data['version'] ) ? $plugin_data['version'] : '1.0.0';
+
 // Définition des constantes de base
 if ( ! defined( 'SE_EDITION_VERSION' ) ) {
-    define( 'SE_EDITION_VERSION', '1.1.0' );
+    define( 'SE_EDITION_VERSION', $plugin_version );
 }
 if ( ! defined( 'SE_EDITION_PATH' ) ) {
     define( 'SE_EDITION_PATH', plugin_dir_path( __FILE__ ) );
